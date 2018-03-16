@@ -67,6 +67,15 @@ var routes = [
     url: './pages/accordion.html',
   },
   {
+    path: '/map/',
+    url: './pages/map.html',
+      on: {
+        pageAfterIn: function (e, page) {
+          // do something after page gets into the view
+            app.methods.loadMap()
+        }}
+  },
+  {
     path: '/action-sheet/',
     componentUrl: './pages/action-sheet.html',
   },

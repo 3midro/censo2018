@@ -465,3 +465,6 @@ code {
 .theme-dark .demo-icon .demo-icon-name {
   color: #aaa;
 }
+
+/* MAPA */
+#mapid { height: 100%;    width: 100vw; }
