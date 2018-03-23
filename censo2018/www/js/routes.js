@@ -72,7 +72,8 @@ var routes = [
       on: {
         pageAfterIn: function (e, page) {
           // do something after page gets into the view
-            app.methods.loadMap()
+            app.methods.loadMap();
+            
         }}
   },
   {
