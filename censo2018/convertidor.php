@@ -23,9 +23,9 @@ if (($gestor = fopen("manzanas_01.csv", "r")) !== FALSE) {
             $feature = array(
                 'type' => 'Feature', 
                 'geometry' => array(
-                'type' => 'Polygon',
-                'coordinates' => array($latlongs),
-                    'properties' => array(
+                    'type' => 'Polygon',
+                    'coordinates' => array($latlongs)),
+                'properties' => array(
                         'gid' => $datos[0],
                         'cve_ent' => $datos[1],
                         'cve_mun' => $datos[2],
@@ -38,7 +38,7 @@ if (($gestor = fopen("manzanas_01.csv", "r")) !== FALSE) {
                         'fila'=> $fila
                 //Other fields here, end without a comma
                     )
-            ));
+            );
                 unset($latlongs);
                 array_push($features, $feature);
         }

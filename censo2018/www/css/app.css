@@ -468,3 +468,8 @@ code {
 
 /* MAPA */
 #mapid { height: 100%;    width: 100vw; }
+
+.listFtes{
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
